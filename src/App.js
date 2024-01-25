@@ -8,6 +8,9 @@ function App() {
   const [color, setColor] = useState('')
   const [hexValue, setHexValue] = useState('')
 
+
+
+
   return (
     <div className="App">
       <ColorBox
