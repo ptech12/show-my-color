@@ -1,4 +1,4 @@
-import React from 'react'
+import colorNames from "colornames"
 
 const ColorInput = ({ color, setColor, setHexValue}) => {
   return (
@@ -9,7 +9,7 @@ const ColorInput = ({ color, setColor, setHexValue}) => {
         value={color}
         onChange={e => {
             setColor(e.target.value)
-            setHexValue(e.target.value)
+            setHexValue(colorNames(e.target.value))
         }}
     />
   )
