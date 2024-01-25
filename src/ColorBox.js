@@ -1,18 +1,24 @@
 import React from 'react'
 
-const ColorBox = ({ color }) => {
+const ColorBox = ({ color, hexValue }) => {
   return (
-    <div style={{
+    <section style={{
         backgroundColor: color
     }} className='color-box'
     >
-
+        <p>
         {
             color ? (
                 (color)
             ) : 'Empty Value'
         }
-    </div>
+        </p>
+        <p>
+            { hexValue ? hexValue : null }
+        </p>
+
+        
+    </section>
   )
 }
 

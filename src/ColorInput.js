@@ -1,13 +1,16 @@
 import React from 'react'
 
-const ColorInput = ({ color, setColor}) => {
+const ColorInput = ({ color, setColor, setHexValue}) => {
   return (
     <input 
         type="text" 
         placeholder='Add Color name'
         className='color-input'
         value={color}
-        onChange={e => setColor(e.target.value)}
+        onChange={e => {
+            setColor(e.target.value)
+            setHexValue(e.target.value)
+        }}
     />
   )
 }
